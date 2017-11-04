@@ -23,7 +23,7 @@ pipeline {
             }
         }
 
-        chung2014 {
+        stage('chung2014') {
             steps {
                 sh 'well done. i am done.'
             }
