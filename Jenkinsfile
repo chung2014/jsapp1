@@ -22,6 +22,12 @@ pipeline {
                 sh 'node --version'
             }
         }
+
+        chung2014 {
+            steps {
+                sh 'well done. i am done.'
+            }
+        }
     }
 
     post {
