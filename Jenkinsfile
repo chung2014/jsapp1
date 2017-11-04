@@ -25,7 +25,7 @@ pipeline {
 
         stage('chung2014') {
             steps {
-                sh 'well done. i am done.'
+                sh 'echo well done. i am done.'
             }
         }
     }
