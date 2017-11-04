@@ -1,14 +1,11 @@
 pipeline {
-    agent { docker 'node:6.3' }
+    agent {
+        docker { image 'node:7-alpine' }
+    }
     stages {
-        stage('Build') {
+        stage('Test') {
             steps {
-                sh 'echo "Hello World"'
-                sh 'echo "Fail!"; exit 1'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+                sh 'node --version'
             }
         }
     }
