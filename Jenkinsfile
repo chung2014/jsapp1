@@ -23,6 +23,12 @@ pipeline {
             }
         }
 
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
+
         stage('chung2014') {
             steps {
                 sh 'echo well done. i am done.'
